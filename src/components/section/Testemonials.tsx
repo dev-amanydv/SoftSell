@@ -36,8 +36,7 @@ const Testemonials = () => {
         }, 5000);
 
         return () => clearInterval(interval);
-    }
-    ,[])
+    }, [testemonials.length])
 
   return (
     <section id='testimonials' className='pt-20 background-section testemonial-section'>
@@ -46,7 +45,7 @@ const Testemonials = () => {
             <h1 className='text-4xl mt-8 font-semibold text-white'>What Our Clients Say?</h1>
             <p className='text-xl text-center mt-4 text-neutral-400'>Discover why businesses trust SoftSell for their software license reselling needs</p>
             <div className='bg-[#1F2937] rounded-xl p-4 flex flex-col justify-center h-70 md:h-40 mt-10 w-9/10 md:5/10'>
-                <p className='text-neutral-400 font-light italic'>" <span className='italic'>{testemonials[current].quote}</span> "</p>
+                <p className='text-neutral-400 font-light italic'> &quot; <span className='italic'>{testemonials[current].quote}</span> &quot; </p>
                 <div className='flex gap-5 mt-5'>
                     <div className='rounded-full overflow-hidden'>
                         <Image src={`${testemonials[current].image}`} alt='testemonial-image' width={50} height={50}   />

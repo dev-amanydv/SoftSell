@@ -32,7 +32,7 @@ const Chatbot: React.FC = () => {
       const botReply = data.reply || "I'm sorry, I couldn't understand that.";
 
       setMessages(prev => [...prev, { type: 'bot', text: botReply }]);
-    } catch (error) {
+    } catch {
       setMessages(prev => [...prev, { type: 'bot', text: 'Something went wrong. Please try again.' }]);
     } finally {
       setLoading(false);

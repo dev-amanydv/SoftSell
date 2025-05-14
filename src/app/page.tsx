@@ -1,5 +1,4 @@
 "use client"
-import dynamic from "next/dynamic";
 import { motion } from "motion/react";
 import Benefits from "@/components/section/Benefits";
 import ContactUs from "@/components/section/ContactUs";
@@ -7,7 +6,6 @@ import Footer from "@/components/section/Footer";
 import Hero from "@/components/section/Hero";
 import Process from "@/components/section/Process";
 import Testemonials from "@/components/section/Testemonials";
-import Image from "next/image";
 import Chatbot from "@/components/ui/Chatbot";
 
 

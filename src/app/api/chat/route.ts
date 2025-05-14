@@ -54,7 +54,7 @@ export async function POST(req: Request) {
     }
 
     return NextResponse.json({ reply: completion.choices[0].message.content });
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error('Chat API error:', error);
     return NextResponse.json({ reply: 'Sorry, there was an error with the AI response. Try again later.' }, { status: 500 });
   }

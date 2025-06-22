@@ -5,7 +5,6 @@
 <img width="849" alt="Image" src="https://github.com/user-attachments/assets/5ec426d2-994f-45c6-95ab-0684961d4e04" />
 
 ---
-
 ## ✨ Features
 
 - 🤖 AI chatbot for instant user assistance (powered by OpenAI)
